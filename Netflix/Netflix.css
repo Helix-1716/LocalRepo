@@ -1,0 +1,291 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+   
+}
+
+body{
+    background-color: black;
+}
+
+
+.main{
+    background-image: url("assets/Images/Background.jpg");
+    position: relative;
+    height: 70vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+}
+
+.main .box{
+    height: 70vh;
+    width: 100%;
+    opacity: 0.54;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    margin: auto;
+    max-width: 60vw;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+nav img{
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+}
+
+.hero{
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    position: relative;
+    font-family: "Outfit", sans-serif;
+    gap: 18px;
+    padding: 0 30px;
+}
+
+.hero> :first-child{
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+.separation{
+    height: 7px;
+    background-color: rgb(104, 102, 102);
+    position: relative;
+    z-index: 20;
+}
+
+.btn{
+    padding: 3px 8px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 400;
+    
+}
+
+
+.btn-red-sm{
+    background-color: red;
+    color: white;
+    
+}
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+
+.main input{
+    padding: 7px 101px 8px 14px;
+    color: white;
+    font-weight: 900;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23,23,23,0.2);
+    border: 1px solid rgba(23,23,23,0.5);
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    max-width: 50vw;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1300px){
+    
+    .first{
+        flex-wrap: wrap;
+    }
+    .secimg img{
+        width: 305px;
+       
+    }
+    .secimg video{
+        position: absolute;
+        right: 0;
+        top: 51px;
+        width: 305px;
+        
+    }
+}
+
+.secimg{
+    position: relative;
+}
+.secimg img{
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.secimg video{
+    position: absolute;
+    right: 0;
+    top: 51px;
+    width: 555px;
+}
+
+section.first > div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+    
+}
+section.first > div :first-child{
+    font-size: 48px;
+    font-weight: bolder;
+    margin: 0;
+    
+   
+}
+
+section.first > div :nth-child(2){
+    font-size: 24px;
+    font-weight: bolder;
+  
+}
+
+.feq h2{
+    text-align: center;
+    padding: 34px;
+    font-size: 48px;
+}
+
+.feq{
+    background: black;
+    color: white;
+}
+.feqbox {
+    display: flex;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 40vw;
+    margin: 24px auto;
+    font-size: 24px;
+    justify-content: space-between;
+    cursor: pointer;
+    transition:  all 0.3s ease-out;;
+
+}
+.feqbox:hover{
+    background-color: #414141;
+}
+
+.feqbox svg{
+    filter: invert(1);
+}
+footer{
+    color: white;
+     margin: auto;
+   max-width: 60vw;
+   padding: 14px;
+}
+footer .questions{
+    padding: 34px 0;
+} 
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+   
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+.footer a{
+    color: white;
+    font-size: 14px;
+    
+    
+}
+
+@media screen and (max-width: 1300px){
+    .hero-buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        flex-direction: column;
+    }
+    
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    gap: 25px;
+}
+.hero> :first-child {
+    font-size: 32px;
+}
+.hero> :nth-child(2) {
+    font-size: 18px;
+}
+.hero> :nth-child(3) {
+    font-size: 18px;
+}
+.feq h2{
+    text-align: center;
+    font-size: 32px;
+}
+.footer-item{
+    align-items: center;
+}
+
+}
