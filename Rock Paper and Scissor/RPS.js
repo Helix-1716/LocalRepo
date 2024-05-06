@@ -23,12 +23,12 @@ const compScorePara = document.querySelector("#comp-score");
         if(userWin){
            userScore++;
            userScorePara.innerText = userScore;
-            msg.innerText = `You win! Your ${userChoice} beats ${compChoice}`;
+            msg.innerText = `You win! Your ${userChoice} beats Opponent's${compChoice}`;
             msg.style.backgroundColor = "blue";
         } else {
             compScore++;
             compScorePara.innerText = compScore;
-            msg.innerText = `You lose. ${compChoice} beats Your ${userChoice}`;
+            msg.innerText = `You lose. Opponent's ${compChoice} beats Your ${userChoice}`;
             msg.style.backgroundColor = "red";
         }
     }
